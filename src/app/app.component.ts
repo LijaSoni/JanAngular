@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TestApp';
+  name:string="Amal";
+  age:number=10;
+  check:boolean=true;
+
+display(){
+  return "hai good morning..."+this.name;
+}
+
+
 }

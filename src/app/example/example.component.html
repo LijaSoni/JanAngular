@@ -1,0 +1,18 @@
+<h1>example works!</h1>
+
+<!-- Directives -->
+<!-- Structural Directives -->
+<!-- ngIf,ngFor,ngSwitch -->
+<ul>
+    <li *ngFor="let i of studentList">{{i.id}} {{i.name}} {{i.Age}}</li>
+</ul>
+
+<container-element [ngSwitch]="today">
+    <span *ngSwitchCase="0"><h1>Sunday</h1></span>
+    <span *ngSwitchCase="1"><h1>Monday</h1></span>
+    <span *ngSwitchCase="2"><h1>Tuesday</h1></span>
+    <span *ngSwitchCase="3"><h1>Wednesday</h1></span>
+    <span *ngSwitchCase="4"><h1>Thursday</h1></span>
+    <span *ngSwitchCase="5"><h1>Friday</h1></span>
+    <span *ngSwitchCase="6"><h1>Saturday</h1></span>
+</container-element>
